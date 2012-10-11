@@ -146,7 +146,6 @@ enyo.kind({
 		};
 		var template = '<a href="#{$link}"><topic>{$topic}</topic></a><br/>';
 		var map = function(o) {
-            // enyo.log(o);
 			return {
 				link: o.topic || o.name,
 				topic: o.name.match('[^/]*\.js$'), // g11n - remove the path name
